@@ -1,0 +1,98 @@
+/* Center the heading and add spacing */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0077cc;
+    font-weight: 700;
+}
+
+/* Input section styling */
+section {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 0 auto;
+    /* center horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* space between label, input, and button */
+}
+
+/* Label styling */
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input field styling */
+input#todo {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button styling */
+button#submitTask {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#submitTask:hover {
+    background-color: #005fa3;
+}
+
+/* Task list container styling */
+.todos {
+    list-style: none;
+    margin: 1.5rem auto 0 auto;
+    /* space above the list, center horizontally */
+    padding: 0;
+    max-width: 320px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* Each task item styling */
+.todos>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #0077cc;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    background-color: #f0f8ff;
+}
+
+/* Paragraph inside the task */
+.todos p {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Action buttons inside task */
+.todos span {
+    cursor: pointer;
+    margin-left: 0.75rem;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+/* Completed task style */
+.strike {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
